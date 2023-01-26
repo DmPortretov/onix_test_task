@@ -1,0 +1,334 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    font-family: 'Judson';
+    font-size: 35px;
+    color: black;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Judson';
+}
+
+/* Код, що вище - для "збиття" налаштувань за замовчуванням */
+
+/* Спільні налаштування */
+
+.page {
+  flex: 1 1 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+[class*="__container"] {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0px 50px;
+} 
+
+/* HEADER======================================================================== */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 128px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap: 11px;
+ }
+
+.header__logo {
+    left: 105px;
+    top: 0px;
+
+    font-style: italic;
+    font-size: 90px;
+    line-height: 176px;
+    color: black;
+    text-decoration: none;
+
+    margin-left: 55px;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__menu {}
+
+.menu {}
+
+.menu__list {
+    display: flex;
+    gap: 41px;
+    margin-top: 42px;
+    flex-wrap: wrap;
+    column-gap: 42px;
+    row-gap: 10px;
+}
+
+.menu__item {
+
+}
+
+.menu__link {
+    font-size: 26px;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    margin-right: 55px;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+/* PAGE======================================= */
+
+.page {
+}
+.page_main {
+}
+.main-block {
+}
+.main-block__container {
+}
+.main-block__body {
+}
+.body-main-block {
+    display: flex;
+}
+.body-main-block__content {
+    flex: 0 1 50%;
+}
+.content-main-block {
+    
+}
+.content-main-block__text {
+    
+    margin-left: 55px;
+    margin-top: 148px;
+
+    color: white;
+
+    width: 445px;
+    height: 330px;
+
+    font-family: 'Judson';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+
+}
+.body-main-block__image {
+}
+
+.main-block__partners {
+    display: flex;
+}
+
+.partners-main-block {
+    justify-content: space-between;
+}
+
+.partners {
+
+}
+
+.partners-main-block__text {
+    width: 600px;
+    height: 122px;
+    margin-top: 65px;
+
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.partners-main-block__items {
+    margin-top: 48px;
+}
+
+.partners-main-block__item {
+    justify-content: center;
+    margin-left: 30px;
+    align-items: baseline;
+}
+
+.main-block__body, body-main-block {
+    background-color: #BB8871;
+    margin-top: 100px;
+    height: 637px;
+}
+
+.main-block_pictures {
+    display: flex;
+    margin-top: 88px;
+}
+
+.main-block_pictures-item {
+    margin-bottom: 8px;
+}
+
+.main-block_pictures-item1 {
+    margin-right: 21px;
+}
+
+/* ABOUT============================================================================= */
+
+.about-block {
+    background-color: black;
+    display: flex;
+    margin-top: -200px;
+    padding-bottom: 177px;
+    
+}
+
+.about-block_text {
+    color: white;
+    text-align: right;
+}
+
+.about-block_paragraf {
+    
+    width: 615px;
+    height: 650px;
+
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+
+    margin-left: 19px;
+
+}
+
+.about_block_title {
+
+    margin-top: 225px;
+    margin-left: 306px;
+
+    width: 322px;
+    height: 87px;
+
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 87px;
+
+}
+
+.about-block_picture {
+    margin-top: 250px;
+}
+
+/* FOOTER======================================================== */
+
+.footer-block__container {
+    display: flex;
+}
+
+.footer-block-content__container {
+    display: flex;
+    width: 1490px;
+    height: 770px;
+    justify-content: space-between;
+}
+
+.name-git-figma {
+    display: block;
+    height: 770px;
+}
+
+.my_name {
+    margin-left: 80px;
+    margin-top: 200px;
+
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 87px;
+}
+
+.footer-anchor {
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+.footer-picture {
+    margin-top: -70px;
+}
+
+#figma {
+    width: 88px;
+    height: 88px;
+}
+
+#git {
+    margin-right: 100px;
+}
+
+.the_end {
+    width: 1442px;
+    height: 55px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
